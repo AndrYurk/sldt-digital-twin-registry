@@ -37,7 +37,8 @@ public class LocalOauthSecurityConfig {
         return http
                 .authorizeRequests(auth -> auth
                         .anyRequest().permitAll())
-                .csrf().disable()
+                .csrf(AbstractHttpConfigurer::disable)
+                .httpBasic(AbstractHttpConfigurer::disable)
                 .formLogin(AbstractHttpConfigurer::disable)
                 .logout(AbstractHttpConfigurer::disable)
                 .anonymous(AbstractHttpConfigurer::disable)
