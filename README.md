@@ -25,7 +25,6 @@ The source code under this folder contains reference implementations of the SLDT
 
 ## Build Packages
 Run `mvn install` to run unit tests, build and install the package.
-sdfgsdgfdsfg
 
 ## Run Package Locally
 To check whether the build was successful, you can start the resulting JAR file from the build process by running `java -jar backend/target/digital-twin-registry-backend-{current-version}.jar`.
